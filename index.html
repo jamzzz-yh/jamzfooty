@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Jamzzz Footy Guessing Game</h1>
+
+        <div class="game-info">
+            <label for="player-select">Select a Player:</label>
+            <select id="player-select">
+  <option value="Select a player">Select a player</option>
+  <!-- Players will be populated here -->
+</select>
+
+            <button id="submit-btn">Submit Guess</button>
+            <button id="new-round-btn">New Round</button>
+            <button id="reset-btn">Start New Game</button>
+        </div>
+
+        <div class="game-feedback">
+            <p id="feedback"></p>
+            <p id="score">Score: 0</p>
+            <p id="timer">Time: 0s</p>
+        </div>
+
+        <div id="guess-grid" class="guess-grid">
+            <!-- Guesses will be displayed here -->
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
